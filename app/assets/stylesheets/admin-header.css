@@ -1,0 +1,9 @@
+#admin-logout-btn {
+  right: 30px;
+  position: absolute;
+  align-self: center;
+}
+
+#admin-header .btn {
+  align-self: center;
+}
