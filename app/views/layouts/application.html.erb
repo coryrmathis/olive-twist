@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OliveTwist</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <header id="app-header">
+      <div id="header-title"><%=link_to image_tag("olive-twist-logo.png"), "/"%></div>
+      <%=link_to "about us", "/about_us", class: "header-btn"%>
+      <%=link_to "example menus", "/menus", class: "header-btn"%>
+      <%=link_to "book us", "/book_us", class: "header-btn"%>
+      <%=link_to "education", "/education", class: "header-btn"%>
+      <span id="header-tagline">Let Us Help Shake Up Your Party!</span>
+    </header>
+    <aside class="notice"><%= notice %></aside>
+    <aside class="alert"><%= alert %></aside>
+
+    <content>
+      <%= yield %>
+    </content>
+    
+  </body>
+</html>

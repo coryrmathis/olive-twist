@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#app-header, #admin-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 10%;
+  background-color: #333131;
+}
+
+#header-title {
+  margin-left: 15px;
+  margin-right: 15px;
+  float: left;
+  align-self: center;
+  font-weight: 200;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+content {
+  background-color: #dbdbdb;
+  height: 100%;
+  padding-top: 100px
+}
+
+.header-btn {
+  border-radius: 2px;
+  font-weight: 100;
+  font-family: sans-serif;
+  align-self: center;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  color: #dbdbdb;
+  text-decoration: none;
+  font-size: .8em;
+}
+
+.header-btn:hover {
+  border-color: #333131;
+  color: #333131;
+  background-color: #dbdbdb; 
+}
+
+#header-tagline {
+  margin-left: 120px;
+  align-self: center;
+  color: #dbdbdb;
+  font-family: 'Poiret One', cursive; 
+  font-size: 1.3em;
+}
