@@ -52,10 +52,17 @@ content {
   background-color: #dbdbdb; 
 }
 
+#header-title {
+  font-size: 32px;
+  color: #dbdbdb;
+  font-family: 'Poiret One', cursive;
+}
+
 #header-tagline {
-  margin-left: 120px;
+  margin-left: 15px;
+  margin-top: 15px;
   align-self: center;
   color: #dbdbdb;
   font-family: 'Poiret One', cursive; 
-  font-size: 1.3em;
+  font-size: 1em;
 }
