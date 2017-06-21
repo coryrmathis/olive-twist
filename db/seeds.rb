@@ -1,41 +1,17 @@
-spirit_names = [
-  "Bourbon Whiskey",
-  "Rye Whiskey",
-  "Scotch",
-  "Gin",
-  "Vodka",
-  "Rum",
-  "Tequila"
-]
+recipes = {
+  "Manhattan" => ["American Whiskey", "Sweet Vermouth", "Angostura Bitters" ],
+  "Old-Fashioned" => ["American Whiskey", "Simple Syrup", "Angostura Bitters"],
+  "Daiquiri" => ["Rum", "Simple Syrup", "Lime Juice"],
+  "Whiskey Sour" => ["American Whiskey", "Simple Syrup", "Lemon Juice"],
+  "Margarita" => ["Tequila", "Triple Sec", "Lime Juice"],
+  "Tom Collins" => ["Gin", "Simple Syrup", "Lemon Juice", "Club Soda"],
+  "Southside" => ["Gin", "Simple Syrup", "Lemon Juice", "Mint"],
+  "Martini" => ["Gin", "Dry Vermouth", "Orange Bitters"],
+  "Martinez" => ["Gin", "Sweet Vermouth", "Maraschino Liqueur", "Orange Biters"],
+  "De La Louisiane" => ["American Whiskey", "Sweet Vermouth", "Benedictine Liqueur", "Peychauds Bitters"],
+  "Sazerac" => ["Rye Whiskey", "Simple Syrup", "Peychauds Bitters", "Absinthe"]
+}
 
-bitters_names = [
-  "Angostura Bitters",
-  "Peychauds Bitters",
-  "Orange Bitters"
-]
-
-apertif_names = [
-  "Sweet Vermouth",
-  "Dry Vermouth",
-  
-]
-
-digestif_names = [
-  "Amaro",
-  "Sherry"
-]
-
-modifier_names = [
-  "Lemon Juice",
-  "Lime Juice",
-  "Orange Juice",
-  "Grapefruit Juice",
-  "Simple Syrup",
-  "Orgeat",
-  "Club Soda",
-  "Tonic",
-  
-  
-]
-
-spirits.each {|spirit| Spirit.create(name: spirit)}
+recipes.each do |name, ingredients|
+  Cocktail.create_with_ingredients({name: name, ingredients: ingredients})
+end

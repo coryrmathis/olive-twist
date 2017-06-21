@@ -1,6 +1,15 @@
+<div class="search-container">
+  <div class="row">
+      
+    
 <%@cocktails.each do |cocktail|%>
-  <div class="cocktail-container">
-    <h3><%=cocktail.name%></h3>
-    <p><%=cocktail.description%></p>
+  <div class="col-md-3">
+    <div class="cocktail-container">
+      <h3><%=cocktail.name%></h3>
+      <p><%=cocktail.description%></p>
+    </div>
   </div>
+ 
 <%end%>
+  </div>
+</div>
