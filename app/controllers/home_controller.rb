@@ -2,17 +2,10 @@ class HomeController < ApplicationController
   def index 
   end
 
-  def about_us
+  def about
     
   end
 
-  def menus
-    
-  end
-
-  def book_us
-  end
-
-  def education
+  def contact
   end
 end

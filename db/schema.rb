@@ -53,13 +53,4 @@ ActiveRecord::Schema.define(version: 20170620221456) do
     t.text     "description"
   end
 
-  create_table "inquiries", force: :cascade do |t|
-    t.text     "contact_name"
-    t.text     "contact_phone"
-    t.text     "contact_email"
-    t.text     "body"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
 end

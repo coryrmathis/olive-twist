@@ -16,6 +16,17 @@ body {
   background-color: #333131;
 }
 
+#app-header * {
+  color: #fff;
+  align-self: center;
+  font-family: 'Poiret One', cursive;
+}
+
+#app-header .header-link {
+  margin-left: 250px;
+  font-size: 2em;
+}
+
 #header-title {
   margin-left: 15px;
   margin-right: 15px;
@@ -65,4 +76,24 @@ content {
   color: #dbdbdb;
   font-family: 'Poiret One', cursive; 
   font-size: 1em;
+}
+
+#landing-page-emblem img{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 100px;
+  left: 100px;
+}
+
+#landing-page-emblem #landing-page-emblem-text {
+  font-family: 'Poiret One', cursive;
+  font-size: 7em;
+  position: absolute;
+  z-index: 2;
+  top: 320px;
+  left: 400px;
+
+
+
 }
